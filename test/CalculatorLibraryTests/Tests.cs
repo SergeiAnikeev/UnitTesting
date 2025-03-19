@@ -1,6 +1,4 @@
-﻿using CalculatorLibrary;
-
-namespace CalculatorLibraryTests
+﻿namespace CalculatorLibrary.Tests.Unit
 {
     public class Tests
     {
