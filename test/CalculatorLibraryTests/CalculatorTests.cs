@@ -1,9 +1,9 @@
 ﻿namespace CalculatorLibrary.Tests.Unit
 {
-    public class Tests
+    public class CalculatorTests
     {
         [Fact]
-        public void TestAdd()
+        public void Add_ShouldAddTwoNumbers_WhenTwoNumbersAreIntegers ()
         {
             var calculator = new Calculator();
             var result = calculator.Add(1,2);
