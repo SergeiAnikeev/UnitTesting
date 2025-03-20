@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AFEEF7A0-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibrary", "src\CalculatorLibrary\CalculatorLibrary.csproj", "{A58929C9-3E9C-4688-A2A0-77E8B5C0EB23}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibraryTests", "test\CalculatorLibraryTests\CalculatorLibraryTests.csproj", "{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibrary.Tests.Unit", "test\CalculatorLibraryTests\CalculatorLibrary.Tests.Unit.csproj", "{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
