@@ -17,7 +17,16 @@
         }
         public float Divide(float a, float b)
         {
+            EnsureThatDividerIsNotZero(b);
             return a / b;
+        }
+
+        public static void EnsureThatDividerIsNotZero(float c)
+        {
+            if(c == 0)
+            {
+                throw new DivideByZeroException();
+            }
         }
 
     }

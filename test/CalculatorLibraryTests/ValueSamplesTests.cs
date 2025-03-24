@@ -98,5 +98,12 @@ namespace CalculatorLibrary.Tests.Unit
             monitorSubject.Should().Raise("ExampleEvent");
         }
 
-    }
+        [Fact]
+        public void TestInternalMembersExample()
+        {
+            var number = _sut.InternalSecretNumber;
+
+            number.Should().Be(42);
+        }
+        }
 }
