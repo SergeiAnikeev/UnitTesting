@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibrary", "src\Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibrary.Tests.Unit", "test\CalculatorLibraryTests\CalculatorLibrary.Tests.Unit.csproj", "{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingTechniques", "TestingTechniques\TestingTechniques.csproj", "{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A58929C9-3E9C-4688-A2A0-77E8B5C0EB23} = {FC21EFF0-42C0-4B3E-AB20-C9EA69E9EA76}
 		{8420D385-DFE7-4D1F-BC3A-F01A2B9006A6} = {AFEEF7A0-94C2-4126-842F-5F67D52B195E}
+		{FB6B4FE8-A7C0-4D1C-BC1E-DFB9CAA62967} = {FC21EFF0-42C0-4B3E-AB20-C9EA69E9EA76}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3DA370D-6116-4481-BE52-3A665E48719D}

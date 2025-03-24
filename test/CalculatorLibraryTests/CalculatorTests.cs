@@ -1,4 +1,5 @@
-﻿using Xunit.Abstractions;
+﻿using FluentAssertions;
+using Xunit.Abstractions;
 
 namespace CalculatorLibrary.Tests.Unit
 {
@@ -52,7 +53,8 @@ namespace CalculatorLibrary.Tests.Unit
             var result = _sut.Multiply(a, b);
 
             //Assert
-            Assert.Equal(expected, result);
+            //Assert.Equal(expected, result);
+            result.Should().Be(expected);
         }
 
 
