@@ -3,16 +3,18 @@ using Xunit.Abstractions;
 
 namespace CalculatorLibrary.Tests.Unit
 {
-    public class CalculatorTests : IAsyncLifetime
+    public class CalculatorTests : IAsyncLifetime, IClassFixture<MyClassFixture>
     {
         private readonly Calculator _sut = new();
-        private readonly Guid _guid = Guid.NewGuid();
+        //private readonly Guid _guid = Guid.NewGuid();
+        private readonly MyClassFixture _fixture;
         private ITestOutputHelper _outputHelper;
 
-        public CalculatorTests(ITestOutputHelper outputHelper)
+        public CalculatorTests(ITestOutputHelper outputHelper, MyClassFixture fixture)
         {
             _outputHelper = outputHelper;
             _outputHelper.WriteLine("Hello from Ctor");
+            _fixture = fixture;
         }
 
         [Theory]
@@ -78,12 +80,13 @@ namespace CalculatorLibrary.Tests.Unit
         [Fact]
         public void Test_Guid_1()
         {
-            _outputHelper.WriteLine(_guid.ToString());
+            _outputHelper.WriteLine(_fixture.id.ToString());
         }
-        [Fact(Skip = "this is just a test")]
+        //[Fact(Skip = "this is just a test")]
+        [Fact]
         public void Test_Guid_2()
         {
-            _outputHelper.WriteLine(_guid.ToString());
+            _outputHelper.WriteLine(_fixture.id.ToString());
         }
 
         public async Task InitializeAsync()
